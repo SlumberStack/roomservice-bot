@@ -12,12 +12,10 @@ data "google_project" "project" {
   project_id = data.google_projects.my-org-projects.projects[0].project_id
 }
 
-
 resource "random_id" "id" {
   byte_length = 4
   prefix      = data.google_project.project.project_id
 }
-
 
 resource "google_project_service" "service" {
   for_each = toset([

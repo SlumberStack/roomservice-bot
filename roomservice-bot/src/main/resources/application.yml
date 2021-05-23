@@ -1,3 +1,6 @@
 micronaut:
   application:
-    name: roomserviceBot
+    name: roomServiceDispatcher
+menu_service:
+  url: https://us-central1-ayo-terraform-admin.cloudfunctions.net
+  path: /kitchen_service/kitchenservice

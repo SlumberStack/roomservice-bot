@@ -9,3 +9,5 @@ variable "oauth2_client_secret" {}
 variable "oauth2_client_id" {}
 variable "oauth2_token_issuer" {}
 variable "jwks_uri" {}
+variable "gcp_oauth2_token_issuer" {}
+variable "gcp_jwks_uri" {}

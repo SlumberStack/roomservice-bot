@@ -1,0 +1,104 @@
+{
+  "responseId": "ea3d77e8-ae27-41a4-9e1d-174bd461b68c",
+  "session": "projects/your-agents-project-id/agent/sessions/88d13aa8-2999-4f71-b233-39cbf3a824a0",
+  "queryResult": {
+    "queryText": "user's original query to your agent",
+    "action": "action.name.of.matched.dialogflow.intent",
+    "parameters": {
+      "param": "param value"
+    },
+    "allRequiredParamsPresent": true,
+    "fulfillmentText": "Text defined in Dialogflow's console for the intent that was matched",
+    "fulfillmentMessages": [
+      {
+        "text": {
+          "text": [
+            "Text defined in Dialogflow's console for the intent that was matched"
+          ]
+        }
+      }
+    ],
+    "outputContexts": [
+      {
+        "name": "projects/your-agents-project-id/agent/sessions/88d13aa8-2999-4f71-b233-39cbf3a824a0/contexts/generic",
+        "lifespanCount": 5,
+        "parameters": {
+          "param": "param value"
+        }
+      },
+      {
+        "name": "projects/${PROJECTID}/agent/sessions/${SESSIONID}/contexts/actions_capability_web_browser"
+      }
+    ],
+    "intent": {
+      "name": "projects/your-agents-project-id/agent/intents/29bcd7f8-f717-4261-a8fd-2d3e451b8af8",
+      "displayName": "Matched Intent Name"
+    },
+    "intentDetectionConfidence": 1,
+    "diagnosticInfo": {},
+    "languageCode": "en"
+  },
+  "originalDetectIntentRequest": {
+    "source": "google",
+    "version": "2",
+    "payload": {
+      "isInSandbox": true,
+      "surface": {
+        "capabilities": [
+          {
+            "name": "actions.capability.SCREEN_OUTPUT"
+          },
+          {
+            "name": "actions.capability.AUDIO_OUTPUT"
+          },
+          {
+            "name": "actions.capability.WEB_BROWSER"
+          },
+          {
+            "name": "actions.capability.MEDIA_RESPONSE_AUDIO"
+          }
+        ]
+      },
+      "inputs": [
+        {
+          "rawInputs": [
+            {
+              "query": "query from the user",
+              "inputType": "KEYBOARD"
+            }
+          ],
+          "arguments": [
+            {
+              "rawText": "query from the user",
+              "textValue": "query from the user",
+              "name": "text"
+            }
+          ],
+          "intent": "actions.intent.TEXT"
+        }
+      ],
+      "user": {
+        "lastSeen": "2017-10-06T01:06:56Z",
+        "locale": "en-US",
+        "userId": "AI_yXq-AtrRh3mJX5D-G0MsVhqun"
+      },
+      "conversation": {
+        "conversationId": "1522951193000",
+        "type": "ACTIVE",
+        "conversationToken": "[]"
+      },
+      "availableSurfaces": [
+        {
+          "capabilities": [
+            {
+              "name": "actions.capability.SCREEN_OUTPUT"
+            },
+            {
+              "name": "actions.capability.AUDIO_OUTPUT"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -14,9 +14,9 @@ resource "google_api_gateway_api_config" "api_gw" {
       contents = base64encode(templatefile("api-spec.tpl",
         {
           function_endpoint = google_cloudfunctions_function.function.https_trigger_url,
-          CLIENT_ID = var.oauth2_client_id,
-          JWKS_URI = var.jwks_uri,
-          TOKEN_ISSUER = var.oauth2_token_issuer
+          CLIENT_ID = "",
+          JWKS_URI = var.gcp_jwks_uri,
+          TOKEN_ISSUER = var.gcp_oauth2_token_issuer
           }
           ))
     }

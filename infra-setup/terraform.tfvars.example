@@ -1,0 +1,7 @@
+
+region="us-central1"
+function_entry_point="com.guestassist.wakeupcall.WakeUpCallSetterFunction"
+function_name="WakeUpCallSetterFunction"
+function_description="Wake-up call setter function"
+function_filename="roomservice-wakeup-call-service-all.jar"
+function_path="../roomservice-bot/build/libs"
